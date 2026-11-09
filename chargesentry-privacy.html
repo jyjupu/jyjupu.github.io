@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChargeSentry – Privacy policy</title>
+<meta name="description" content="Privacy policy of the ChargeSentry Android app.">
+<style>
+:root{--bg:#ffffff;--fg:#1d2329;--muted:#55606b;--line:#dde2e7;--accent:#0b6e4f;--card:#f5f7f8}
+@media (prefers-color-scheme:dark){:root{--bg:#14181c;--fg:#e8ecef;--muted:#a3aeb8;--line:#2c343b;--accent:#5cc9a0;--card:#1c2228}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 1rem 4rem}
+header{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:1rem;margin-bottom:2rem}
+header .brand{font-weight:700;font-size:1.25rem;color:var(--fg);text-decoration:none}
+nav a{margin-left:1rem}
+a{color:var(--accent)}
+h1{font-size:1.9rem;line-height:1.25;margin:0 0 .5rem}
+h2{font-size:1.3rem;margin:2.2rem 0 .6rem}
+h3{font-size:1.05rem;margin:1.4rem 0 .3rem}
+.lead{color:var(--muted);font-size:1.1rem;margin-top:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.2rem 1.3rem;margin:1rem 0}
+.card h3{margin-top:0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+td,th{text-align:left;vertical-align:top;padding:.45rem .5rem;border-bottom:1px solid var(--line)}
+th{width:38%}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+<header><a class="brand" href="index.html">Jyjupu</a><nav><a href="chargesentry-privacy-fi.html" hreflang="fi" lang="fi">Suomeksi</a></nav></header>
+<h1>ChargeSentry privacy policy</h1>
+<p class="lead">Effective 9 November 2026</p>
+
+<h2>In short</h2>
+<p>ChargeSentry does not collect, send or sell personal data. The app has no user accounts, no advertising, no analytics and no third-party tracking libraries. Everything it stores stays on your phone, and the only device it talks to is the Shelly smart plug that you link to it in your own home network. The developer receives no data from the app.</p>
+
+<h2>Who is responsible</h2>
+<p>Jyrki J Pulkkinen Consulting, Business ID 3308697-1, Finland. Email: <a href="mailto:jyjupu@protonmail.com">jyjupu@protonmail.com</a></p>
+
+<h2>What the app stores on your phone</h2>
+<ul>
+<li>Battery temperature, battery level and charging state, at most one reading per minute, for the last 7 days.</li>
+<li>An event log (warnings, alarms, charging cuts, plug connection events), the latest 500 events.</li>
+<li>Your settings, such as temperature limits and alarm options.</li>
+<li>The linked plug's network address, name and device ID.</li>
+<li>The plug password, if your plug has one. It is encrypted with a key held in the Android Keystore of your phone.</li>
+<li>A random installation ID created by the app.</li>
+</ul>
+<p>This data is excluded from Android cloud backups and device-to-device transfer. Uninstalling the app deletes it.</p>
+
+<h2>What the app sends, and where</h2>
+<p>ChargeSentry communicates only with the Shelly plug you link, directly over your local Wi-Fi network. It does not send data over the internet to the developer or to anyone else. The app sends the plug:</p>
+<ul>
+<li>commands to switch the power on or off and to set a safety timer;</li>
+<li>a small watchdog script that switches the plug off if the phone stops responding;</li>
+<li>the random installation ID and the device name of your phone (for example "Galaxy S25"), so that the plug knows which device controls it. They are stored only on your own plug and removed when you unlink the plug in the app.</li>
+</ul>
+<p>To find plugs, the app searches your local network (mDNS). If you use Shelly's own app or cloud service, the plug's manufacturer handles that data under its own privacy policy; ChargeSentry does not use the Shelly cloud.</p>
+
+<h2>Exporting data</h2>
+<p>You can export the temperature history and event log as CSV files. This happens only when you choose it, and the files go only where you send them.</p>
+
+<h2>Permissions</h2>
+<table>
+<tr><th>Network and Wi-Fi state, local network access, multicast</th><td>Find and control the Shelly plug in your home network.</td></tr>
+<tr><th>Notifications</th><td>Warnings and alarms.</td></tr>
+<tr><th>Foreground service (connected device)</th><td>Keep monitoring the battery and the plug while the app is in the background.</td></tr>
+<tr><th>Ignore battery optimization, wake lock, exact alarms</th><td>Keep measuring reliably, also when the phone is idle.</td></tr>
+<tr><th>Start at boot</th><td>Resume monitoring after the phone restarts.</td></tr>
+<tr><th>Full-screen notifications, vibration</th><td>Show the alarm on the lock screen and vibrate.</td></tr>
+<tr><th>Do Not Disturb access (optional)</th><td>Let the alarm sound when Do Not Disturb is on.</td></tr>
+</table>
+<p>The app does not use location, contacts, camera, microphone, photos or files.</p>
+
+<h2>Google Play</h2>
+<p>Purchases are handled by Google Play under Google's terms and privacy policy. Google may provide the developer with aggregated statistics and crash reports, as described in Google's own policies. These do not include the data the app stores on your phone.</p>
+
+<h2>Children</h2>
+<p>ChargeSentry is not directed at children.</p>
+
+<h2>Your rights and contact</h2>
+<p>Because the developer does not receive or hold your data, there is nothing on our side to access or delete. You can delete all app data by uninstalling the app. For questions, email <a href="mailto:jyjupu@protonmail.com">jyjupu@protonmail.com</a>.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version is published on this page with a new effective date.</p>
+<footer>Jyrki J Pulkkinen Consulting · Business ID 3308697-1 · VAT FI33086971 · Finland · <a href="mailto:jyjupu@protonmail.com">jyjupu@protonmail.com</a></footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChargeSentry – Tietosuojaseloste</title>
+<meta name="description" content="ChargeSentry-sovelluksen tietosuojaseloste.">
+<style>
+:root{--bg:#ffffff;--fg:#1d2329;--muted:#55606b;--line:#dde2e7;--accent:#0b6e4f;--card:#f5f7f8}
+@media (prefers-color-scheme:dark){:root{--bg:#14181c;--fg:#e8ecef;--muted:#a3aeb8;--line:#2c343b;--accent:#5cc9a0;--card:#1c2228}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 1rem 4rem}
+header{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:1rem;margin-bottom:2rem}
+header .brand{font-weight:700;font-size:1.25rem;color:var(--fg);text-decoration:none}
+nav a{margin-left:1rem}
+a{color:var(--accent)}
+h1{font-size:1.9rem;line-height:1.25;margin:0 0 .5rem}
+h2{font-size:1.3rem;margin:2.2rem 0 .6rem}
+h3{font-size:1.05rem;margin:1.4rem 0 .3rem}
+.lead{color:var(--muted);font-size:1.1rem;margin-top:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.2rem 1.3rem;margin:1rem 0}
+.card h3{margin-top:0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+td,th{text-align:left;vertical-align:top;padding:.45rem .5rem;border-bottom:1px solid var(--line)}
+th{width:38%}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+<header><a class="brand" href="index.html">Jyjupu</a><nav><a href="chargesentry-privacy.html" hreflang="en" lang="en">In English</a></nav></header>
+<h1>ChargeSentryn tietosuojaseloste</h1>
+<p class="lead">Voimassa 9.11.2026 alkaen</p>
+<p>Tämä on käännös. Ristiriitatilanteessa englanninkielinen versio on ensisijainen.</p>
+
+<h2>Lyhyesti</h2>
+<p>ChargeSentry ei kerää, lähetä eikä myy henkilötietoja. Sovelluksessa ei ole käyttäjätilejä, mainoksia, analytiikkaa eikä kolmansien osapuolten seurantakirjastoja. Kaikki tallennettu pysyy puhelimessasi, ja ainoa laite, jonka kanssa sovellus viestii, on Shelly-älypistoke, jonka linkität siihen omassa kotiverkossasi. Kehittäjä ei saa sovelluksesta mitään tietoja.</p>
+
+<h2>Rekisterinpitäjä</h2>
+<p>Jyrki J Pulkkinen Consulting, Y-tunnus 3308697-1, Suomi. Sähköposti: <a href="mailto:jyjupu@protonmail.com">jyjupu@protonmail.com</a></p>
+
+<h2>Mitä sovellus tallentaa puhelimeen</h2>
+<ul>
+<li>Akun lämpötila, varaustaso ja lataustila, enintään yksi mittaus minuutissa, viimeiseltä 7 päivältä.</li>
+<li>Tapahtumaloki (varoitukset, hälytykset, latauksen katkaisut, pistokkeen yhteystapahtumat), viimeiset 500 tapahtumaa.</li>
+<li>Asetuksesi, kuten lämpötilarajat ja hälytysasetukset.</li>
+<li>Linkitetyn pistokkeen verkko-osoite, nimi ja laitetunniste.</li>
+<li>Pistokkeen salasana, jos pistokkeessa on sellainen. Se salataan puhelimen Android Keystoressa säilytettävällä avaimella.</li>
+<li>Sovelluksen luoma satunnainen asennustunniste.</li>
+</ul>
+<p>Tiedot eivät siirry Androidin pilvivarmuuskopioihin eikä laitteesta toiseen siirrettäessä. Sovelluksen poistaminen poistaa ne.</p>
+
+<h2>Mitä sovellus lähettää ja minne</h2>
+<p>ChargeSentry viestii vain linkittämäsi Shelly-pistokkeen kanssa suoraan kotisi Wi-Fi-verkossa. Se ei lähetä tietoja internetin kautta kehittäjälle eikä kenellekään muulle. Pistokkeelle sovellus lähettää:</p>
+<ul>
+<li>käskyt virran kytkemiseksi päälle tai pois ja turva-ajastimen asettamiseksi;</li>
+<li>pienen vartijaskriptin, joka katkaisee virran, jos puhelin lakkaa vastaamasta;</li>
+<li>satunnaisen asennustunnisteen ja puhelimesi laitenimen (esimerkiksi "Galaxy S25"), jotta pistoke tietää, mikä laite sitä ohjaa. Ne tallentuvat vain omaan pistokkeeseesi ja poistuvat, kun purat linkityksen sovelluksessa.</li>
+</ul>
+<p>Pistokkeiden etsimiseen sovellus käyttää kotiverkon hakua (mDNS). Jos käytät Shellyn omaa sovellusta tai pilvipalvelua, valmistaja käsittelee niiden tiedot oman tietosuojaselosteensa mukaan; ChargeSentry ei käytä Shellyn pilvipalvelua.</p>
+
+<h2>Tietojen vienti</h2>
+<p>Voit viedä lämpötilahistorian ja tapahtumalokin CSV-tiedostoina. Vienti tapahtuu vain, kun itse valitset sen, ja tiedostot menevät vain sinne, minne ne lähetät.</p>
+
+<h2>Käyttöoikeudet</h2>
+<table>
+<tr><th>Verkon ja Wi-Fin tila, lähiverkko, multicast</th><td>Shelly-pistokkeen löytäminen ja ohjaus kotiverkossa.</td></tr>
+<tr><th>Ilmoitukset</th><td>Varoitukset ja hälytykset.</td></tr>
+<tr><th>Etualapalvelu (yhdistetty laite)</th><td>Akun ja pistokkeen valvonta sovelluksen ollessa taustalla.</td></tr>
+<tr><th>Akun optimoinnin ohitus, herätyslukko, tarkat herätykset</th><td>Luotettava mittaus myös puhelimen ollessa levossa.</td></tr>
+<tr><th>Käynnistys puhelimen käynnistyessä</th><td>Valvonta jatkuu puhelimen uudelleenkäynnistyksen jälkeen.</td></tr>
+<tr><th>Koko näytön ilmoitukset, värinä</th><td>Hälytys lukitulle näytölle ja värinä.</td></tr>
+<tr><th>Älä häiritse -käyttöoikeus (valinnainen)</th><td>Hälytys kuuluu myös Älä häiritse -tilassa.</td></tr>
+</table>
+<p>Sovellus ei käytä sijaintia, yhteystietoja, kameraa, mikrofonia, kuvia eikä tiedostoja.</p>
+
+<h2>Google Play</h2>
+<p>Ostot käsittelee Google Play Googlen ehtojen ja tietosuojaselosteen mukaisesti. Google voi antaa kehittäjälle koosteisia tilastoja ja kaatumisraportteja omien käytäntöjensä mukaan. Ne eivät sisällä sovelluksen puhelimeen tallentamia tietoja.</p>
+
+<h2>Lapset</h2>
+<p>ChargeSentryä ei ole suunnattu lapsille.</p>
+
+<h2>Oikeutesi ja yhteydenotot</h2>
+<p>Koska kehittäjä ei saa eikä säilytä tietojasi, meillä ei ole tietoja, joita voisi tarkastaa tai poistaa. Voit poistaa kaikki sovelluksen tiedot poistamalla sovelluksen. Kysymykset: <a href="mailto:jyjupu@protonmail.com">jyjupu@protonmail.com</a>.</p>
+
+<h2>Muutokset</h2>
+<p>Jos seloste muuttuu, uusi versio julkaistaan tällä sivulla uudella voimaantulopäivällä.</p>
+<footer>Jyrki J Pulkkinen Consulting · Y-tunnus 3308697-1 · ALV FI33086971 · Suomi · <a href="mailto:jyjupu@protonmail.com">jyjupu@protonmail.com</a></footer>
+</main>
+</body>
+</html>
